@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="480" viewBox="0 0 600 480" role="img" aria-label="Poster placeholder">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef2f7"/>
+      <stop offset="100%" stop-color="#d9e2ec"/>
+    </linearGradient>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="none" stroke="#c7d2dd" stroke-width="0.5" />
+    </pattern>
+  </defs>
+  <rect width="600" height="480" fill="url(#g)" />
+  <rect width="560" height="440" x="20" y="20" fill="url(#grid)" stroke="#bcc7d2" stroke-width="2" rx="8" />
+  <g fill="#5b6b7c" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" font-weight="600">
+    <text x="50%" y="50%" text-anchor="middle" dy="-20">Poster Pending</text>
+    <text x="50%" y="50%" text-anchor="middle" font-size="18" dy="30">Add thumbnail / full image</text>
+  </g>
+</svg>

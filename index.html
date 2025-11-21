@@ -9,51 +9,128 @@
 
 <body>
 
-    <header class="hero">
+    <header class="hero" role="banner">
         <h1>Elijah Shannon</h1>
-        <p class="subtitle">Undergraduate Researcher • Computer Science • Trustworthy AI</p>
-        <div class="links">
-            <a href="Elijah_Shannon_CV.pdf" target="_blank">CV</a>
-            <a href="mailto:elijahshannon@outlook.com">Email</a>
-            <a href="https://github.com/elijahshannon" target="_blank">GitHub</a>
-            <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
+        <p class="subtitle">Computer Science - Undergraduate Researcher</p>
+        <div class="links" aria-label="Profile links">
+            <!--<a href="Elijah_Shannon_CV.pdf" target="_blank" rel="noopener">CV</a> -->
         </div>
     </header>
 
-    <section class="content">
+    <main class="content" role="main">
 
-        <h2>About Me</h2>
-        <p>
-            I am an undergraduate Computer Science researcher at the University of Alabama in Huntsville 
-            focusing on trustworthy AI, multimodal detection of AI-generated content, and transformer-based 
-            generative forensics. My work spans diffusion residual analysis, segmentation pipelines, and 
-            multimodal robustness, with applications in computer vision, audio, RF, and document forensics.
-        </p>
+    <h2>About Me</h2>
+    <p>
+        I am an undergraduate Computer Science researcher at the University of Alabama in Huntsville 
+        specializing in trustworthy and interpretable artificial intelligence. My work focuses on developing 
+        physically grounded methods for detecting and localizing AI-generated or AI-altered media across 
+        images, video, and other modalities. I explore how we can analyze generated content to improve transparency, 
+        reliability, and public trust in generative AI systems.
+    </p>
+    <p>
+        Beyond research, I lead the UAH Data Science & Artificial Intelligence Club, a 150+ member student 
+        organization dedicated to enabling beginner-friendly AI education and fostering interdisciplinary collaboration. 
+        Through workshops, outreach, and mentorship, I work to bridge technical innovation with accessibility 
+        and ethical engagement, ensuring that advancements in AI serve both science and society.
+    </p>
 
-        <h2>Research Interests</h2>
-        <ul>
-            <li>Generative model forensics (DNF, diffusion inversion, multimodal IDR)</li>
-            <li>Transformer architectures for detection and segmentation</li>
-            <li>AI security, robustness, and trustworthiness</li>
-            <li>Multimodal AI: image, video, audio, hyperspectral, RF</li>
-        </ul>
+    <h2>Research Interests</h2>
+    <ul>
+        <li>Trustworthy and interpretable AI</li>
+        <li>Generative model forensics and diffusion residual analysis</li>
+        <li>Multimodal detection of AI-generated and AI-altered content</li>
+        <li>Transformer architectures for segmentation and localization</li>
+        <li>Cross-domain robustness: image, video, audio, hyperspectral, and RF data</li>
+    </ul>
 
-        <h2>Selected Projects</h2>
-        <ul>
-            <li><strong>Diffusion Noise Feature Segmentation (DNF-U-Net):</strong> Localization of AI manipulations using diffusion-based residuals.</li>
-            <li><strong>Inverse Diffusion Residuals (IDR):</strong> Extending residual forensic analysis to audio, video, RF, and 3D modalities.</li>
-            <li><strong>1613 King James Bible Digitization:</strong> YOLOv12 object detection + CNN letter classification for document reconstruction.</li>
-            <li><strong>Drone Programming & Cybersecurity Robotics:</strong> ROS2-based control systems for multi-agent research.</li>
-        </ul>
 
-        <h2>Publications & Posters</h2>
-        <p>Full list available in my CV.</p>
+        <h2>Publications</h2>
+        <div class="block-list" id="publications">
 
-    </section>
+            <!-- Publication: IEEE Big Data Workshop Paper -->
+            <div class="info-block" data-type="publication" data-project="dnf-localization">
+                <button class="block-image" aria-label="Expand DNF-Localization figure" data-full="assets/Full_Model_Pipeline.png">
+                    <img src="assets/Full_Model_Pipeline.png" alt="Visualization of diffusion noise feature segmentation pipeline" loading="lazy">
+                </button>
+                <div class="block-body">
+                    <h3>
+                        Localizing AI Image Manipulations via Diffusion Noise Features and Transformer Segmentation
+                    </h3>
+                    <p class="authors">Elijah Shannon, Chaity Banerjee</p>
+                    <p class="venue-line">IEEE Big Data Workshop on Applied Artificial Intelligence for Public Safety and Security (AIPSS), Macau, China, 2025 (ACCEPTED).</p>
+                </div>
+            </div>
 
+        </div>
+
+        <h2>Presentations</h2>
+
+        <div class="block-list" id="posters">
+            <!-- Poster: AI Manipulation Detection -->
+            <div class="info-block" data-type="poster" data-project="ai-localization">
+                <button class="block-image" aria-label="Expand AI Manipulation Detection poster" data-full="assets/AI_Localization_Poster.png">
+                    <img src="assets/Full_Model_Pipeline.png" alt="AI image manipulation detection via diffusion residuals" loading="lazy">
+                </button>
+                <div class="block-body">
+                    <h3><span>Localizing AI-Generated Content in Images Using Diffusion Residuals</span></h3>
+                    <p class="authors">Elijah Shannon</p>
+                    <p class="venue-line">IEEE Big Data Workshop on Applied Artificial Intelligence for Public Safety and Security (AIPSS), Macau, China, 2025 (Accepted Presentation).</p>
+                </div>
+            </div>
+
+        </div>
+
+        <h2>Posters</h2>
+        <div class="block-list" id="posters">
+
+            <!-- Poster: AI-Driven Bible Digitization -->
+            <div class="info-block" data-type="poster" data-project="bible-digitization">
+                <button class="block-image" aria-label="Expand Bible Digitization poster" data-full="assets/From_Manuscript_To_Machine.png">
+                    <img src="assets/From_Manuscript_To_Machine.png" alt="AI transcription pipeline for historical manuscripts" loading="lazy">
+                </button>
+                <div class="block-body">
+                    <h3><a href="https://louis.uah.edu/honors-399/28/" target="_blank" rel="noopener">
+                        From Manuscript to Machine: AI-Driven Bible Digitization
+                    </a></h3>
+                    <p class="authors">Elijah Shannon</p>
+                    <p class="venue-line">UAH Honors College Study Abroad Poster Fair, 2025.</p>
+                </div>
+            </div>
+
+            <!-- Poster: Drone Programming and Cybersecurity Robotics -->
+            <div class="info-block" data-type="poster" data-project="drone-ros2">
+                <button class="block-image" aria-label="Expand Drone Robotics poster" data-full="assets/Unmanned_Ground_System.png">
+                    <img src="assets/Unmanned_Ground_System.png" alt="ROS2-based multi-agent autonomous system poster" loading="lazy">
+                </button>
+                <div class="block-body">
+                    <h3><span>Autonomous Unmanned Ground System Swarm Collaboration: A Customizable Testbed</span></h3>
+                    <p class="authors">Elijah Shannon</p>
+                    <p class="venue-line">UAH Computer Science Exposition, 2025.</p>
+                    <div class="block-actions">
+                        <a href="pdfs/Unmanned_Ground_System.pdf" target="_blank" rel="noopener">PDF</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        
+        <!-- Modal root (shared for all expandable images) -->
+        <div id="imgModal" class="modal" aria-hidden="true" role="dialog" aria-label="Expanded image dialog">
+            <div class="modal-content">
+                <button type="button" class="modal-close" aria-label="Close image">&times;</button>
+                <img id="modalImage" alt="Expanded item image">
+                <div id="modalCaption"></div>
+            </div>
+        </div>
+
+        <!-- External script moved to script.js -->
+    </main>
     <footer>
         <p>© 2025 Elijah Shannon</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>

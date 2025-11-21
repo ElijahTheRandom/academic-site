@@ -1,0 +1,13 @@
+############################################
+# robots.txt for elijahshannon.com
+# Purpose: Request all crawlers not to index or crawl any content.
+# Note: This is an advisory file; non-compliant or malicious bots may ignore it.
+# If you later wish to allow crawling, replace Disallow lines with 'Allow: /'.
+############################################
+
+User-agent: *
+Disallow: /
+
+# No sitemap exposed while site is private
+# Sitemap: https://elijahshannon.com/sitemap.xml
+
