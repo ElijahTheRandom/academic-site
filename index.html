@@ -9,166 +9,75 @@
 
 <body>
 
+    <nav class="site-nav" aria-label="Primary">
+        <div class="site-nav-inner">
+            <a href="index.html" class="brand">Elijah Shannon</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="https://github.com/ElijahTheRandom/" target="_blank" rel="noopener noreferrer">GitHub <span class="ext">&#8599;</span></a></li>
+                <li><a href="https://scholar.google.com/citations?user=PR8HUvsAAAAJ&hl" target="_blank" rel="noopener noreferrer">Google Scholar <span class="ext">&#8599;</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
     <header class="hero" role="banner">
         <h1>Elijah Shannon</h1>
-        <p class="subtitle">Computer Science - Undergraduate Researcher</p>
-        <div class="links" aria-label="Profile links">
-            <!--<a href="Elijah_Shannon_CV.pdf" target="_blank" rel="noopener">CV</a> -->
-            <a href="https://scholar.google.com/citations?user=PR8HUvsAAAAJ&hl" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-        </div>
+        <p class="subtitle">Incoming Ph.D. in Computer Science &middot; Texas A&amp;M University</p>
     </header>
 
     <main class="content" role="main">
 
-        <h2>About Me</h2>
-        <p>
-            I am an undergraduate Computer Science researcher at the University of Alabama in Huntsville, 
-            specializing in the internal structures of generative AI and multimodal learning. 
-            While my background includes developing autonomous systems and swarm robotics, my current research 
-            investigates how high-dimensional representations form inside diffusion models and how 
-            we can engineer these systems to be more interpretable and reliable.
-        </p>
-        <p>
-            My recent work approaches these questions through a digital forensics lens, specifically using 
-            diffusion noise priors to localize AI-altered media. However, my long-term goal is to contribute 
-            to the core science of generative modeling across image, video, and sensing domains. 
-            This motivation drives my current projects, which range from analyzing diffusion residuals 
-            to developing 3D CNN architectures for limited-context video generation.
-        </p>
+        <section class="about">
+            <h2>About</h2>
+            <p>
+                I am an incoming Ph.D. student in Computer Science at Texas A&amp;M University, joining
+                <a href="https://engineering.tamu.edu/cse/profiles/Muzahid-Abdullah.html" target="_blank" rel="noopener noreferrer">Dr. Abdullah Muzahid</a>'s
+                group in Fall 2026. I recently completed my B.S. in Computer Science at the University of
+                Alabama in Huntsville, where I was advised by Dr. Chaity Banerjee and
+                Dr. Tathagata Mukherjee, specializing in the internal structures of generative AI and
+                multimodal learning. While my background includes developing autonomous systems and swarm robotics, my
+                current research investigates how high-dimensional representations form inside diffusion
+                models and how we can engineer these systems to be more interpretable and reliable.
+            </p>
+            <p>
+                My recent work approaches these questions through a digital forensics lens, specifically using
+                diffusion noise priors to localize AI-altered media. My long-term goal is to contribute to the
+                core science of generative modeling across image, video, and sensing domains &mdash; current
+                projects range from analyzing diffusion residuals to developing 3D CNN architectures for
+                limited-context video generation.
+            </p>
+            <p>
+                Dr. Muzahid's work on computer architecture and high-performance computing for LLM training
+                and inference complements this trajectory closely. As frontier generative systems push the
+                limits of memory, throughput, and energy, <em>what</em> a model represents internally and
+                <em>how</em> it runs on hardware become inseparable problems &mdash; I am excited to
+                contribute at that intersection.
+            </p>
+        </section>
 
-        <p>
-            Beyond research, I founded and currently lead the UAH Data Science & Artificial Intelligence 
-            Club, a 150+ member student organization dedicated to enabling beginner-friendly AI education and 
-            fostering interdisciplinary collaboration. Through workshops, outreach, and mentorship, I work to 
-            bridge technical innovation with accessibility and ethical engagement, ensuring that advancements 
-            in AI serve both science and society.
-        </p>
+        <section class="interests">
+            <h2>Research Interests</h2>
+            <ul class="tag-list">
+                <li>Diffusion models</li>
+                <li>Generative models</li>
+                <li>Multimodal learning</li>
+                <li>Representation learning</li>
+                <li>Interpretability</li>
+                <li>Trustworthy AI</li>
+                <li>AI media forensics</li>
+                <li>Cross-domain robustness</li>
+                <li>HPC for ML</li>
+                <li>Computer architecture for ML</li>
+                <li>Efficient LLM training &amp; inference</li>
+                <li>ML systems &amp; infrastructure</li>
+            </ul>
+        </section>
 
-        <h2>Research Interests</h2>
-        <ul>
-            <li>Trustworthy and interpretable AI</li>
-            <li>Foundations of generative models (diffusion, autoencoders, transformers)</li>
-            <li>Multimodal generative modeling and representation learning</li>
-            <li>Generative multimodal forensics and reliability of AI-generated media</li>
-            <li>
-                Cross-domain robustness and evaluation
-                <ul>
-                    <li>Image, video, audio, and RF / other sensor data</li>
-                    <li>Unified approaches that transfer across modalities</li>
-                </ul>
-            </li>
-        </ul>
-
-
-        <h2>Publications</h2>
-        <div class="block-list" id="publications">
-
-            <!-- Publication: IEEE Big Data Workshop Paper -->
-            <div class="info-block" data-type="publication" data-project="dnf-localization">
-                <button class="block-image" aria-label="Expand DNF-Localization figure" data-full="assets/Full_Model_Pipeline.png">
-                    <img src="assets/Full_Model_Pipeline.png" alt="Visualization of diffusion noise feature segmentation pipeline" loading="lazy">
-                </button>
-                <div class="block-body">
-                    <h3>
-                        Localizing AI Image Manipulations by Learning Generative Noise Signatures using Diffusion Based Noise Priors
-                    </h3>
-                    <p class="authors">Elijah Shannon, Chaity Banerjee</p>
-                    <p class="venue-line">IEEE Big Data Workshop on Applied Artificial Intelligence for Public Safety and Security (AI-PublicSecurity-2025), Macau, China, 2025 (ACCEPTED).</p>
-                    <div class="block-actions">
-                        <a href="https://ieeexplore.ieee.org/document/11400913" target="_blank" rel="noopener">Paper Link</a>
-                    </div>                </div>
-            </div>
-
-        </div>
-
-        <h2>Posters</h2>
-        <div class="block-list" id="posters">
-
-
-            <div class="info-block" data-type="poster" data-project="text-digitization">
-                <button class="block-image" aria-label="Expand  poster" data-full="assets/Research_Horizons_Poster.png">
-                    <img src="assets/Research_Horizons_Poster.png" alt="AI-Driven AI generated content detector" loading="lazy">
-                </button>
-                <div class="block-body">
-                    <h3>
-                        Localizing AI Image Manipulations by Learning Generative Noise Signatures using Diffusion Based Noise Priors
-                    </a></h3>
-                    <p class="authors">Elijah Shannon, Chaity Banerjee</p>
-                    <p class="venue-line">UAH Research Horizons Undergraduate Poster Fair, 2026.</p>
-                    <p class="venue-line">1st Place</p>
-                    <div class="block-actions">
-                        <a href="pdfs/Research_Horizons_Poster.pdf" target="_blank" rel="noopener">PDF</a>
-                    </div>
-                </div>
-            </div>
-
-            
-            <!-- Poster: AI-Driven Digitization -->
-            <div class="info-block" data-type="poster" data-project="text-digitization">
-                <button class="block-image" aria-label="Expand Digitization poster" data-full="assets/From_Manuscript_To_Machine.png">
-                    <img src="assets/From_Manuscript_To_Machine.png" alt="AI transcription pipeline for historical manuscripts" loading="lazy">
-                </button>
-                <div class="block-body">
-                    <h3><a href="https://louis.uah.edu/honors-399/28/" target="_blank" rel="noopener">
-                        From Manuscript to Machine: AI-Driven Transcriber
-                    </a></h3>
-                    <p class="authors">Elijah Shannon</p>
-                    <p class="venue-line">UAH Honors College Study Abroad Poster Fair, 2025.</p>
-                    <div class="block-actions">
-                        <a href="https://louis.uah.edu/honors-399/28/" target="_blank" rel="noopener">Poster Link</a>
-                        <a href="https://libarchstor2.uah.edu/digitalcollections/exhibits/show/uah-in-london/elijah-g-shannon" target="_blank" rel="noopener">Paper Link</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Poster: Drone Programming and Cybersecurity Robotics -->
-            <div class="info-block" data-type="poster" data-project="drone-ros2">
-                <button class="block-image" aria-label="Expand Drone Robotics poster" data-full="assets/Unmanned_Ground_System.png">
-                    <img src="assets/Unmanned_Ground_System.png" alt="ROS2-based multi-agent autonomous system poster" loading="lazy">
-                </button>
-                <div class="block-body">
-                    <h3><span>Autonomous Unmanned Ground System Swarm Collaboration: A Customizable Testbed</span></h3>
-                    <p class="authors">Elijah Shannon</p>
-                    <p class="venue-line">UAH Computer Science Exposition, 2025.</p>
-                    <div class="block-actions">
-                        <a href="pdfs/Unmanned_Ground_System.pdf" target="_blank" rel="noopener">PDF</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-
-<h2>Presentations</h2>
-
-        <div class="block-list" id="posters">
-            <!-- Poster: AI Manipulation Detection -->
-            <div class="info-block" data-type="poster" data-project="ai-localization">
-                <button class="block-image" aria-label="Expand AI Manipulation Detection poster" data-full="assets/Full_Model_Pipeline.png">
-                    <img src="assets/Full_Model_Pipeline.png" alt="AI image manipulation detection via diffusion residuals" loading="lazy">
-                </button>
-                <div class="block-body">
-                    <h3><span>Localizing AI Image Manipulations by Learning Generative Noise Signatures using Diffusion Based Noise Priors</span></h3>
-                    <p class="authors">Elijah Shannon</p>
-                    <p class="venue-line">IEEE Big Data Workshop on Applied Artificial Intelligence for Public Safety and Security (AI-PublicSecurity-2025), Macau, China, 2025 (Accepted Presentation).</p>
-                </div>
-            </div>
-
-        </div>
-        
-        <!-- Modal root (shared for all expandable images) -->
-        <div id="imgModal" class="modal" aria-hidden="true" role="dialog" aria-label="Expanded image dialog">
-            <div class="modal-content">
-                <button type="button" class="modal-close" aria-label="Close image">&times;</button>
-                <img id="modalImage" alt="Expanded item image">
-                <div id="modalCaption"></div>
-            </div>
-        </div>
-
-        <!-- External script moved to script.js -->
     </main>
     <footer>
-        <p>Elijah Shannon 2026</p>
+        <p>Elijah Shannon &middot; 2026</p>
     </footer>
 
     <script src="script.js"></script>

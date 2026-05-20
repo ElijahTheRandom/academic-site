@@ -1,6 +1,7 @@
 (function() {
   const fallback = 'assets/fallback_poster.svg';
   const modal = document.getElementById('imgModal');
+  if (!modal) return;
   const modalImg = document.getElementById('modalImage');
   const modalCaption = document.getElementById('modalCaption');
   const closeBtn = modal.querySelector('.modal-close');
