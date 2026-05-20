@@ -1,3 +1,16 @@
+// Theme toggle — runs on every page
+(function() {
+  const toggle = document.querySelector('.theme-toggle');
+  if (!toggle) return;
+  toggle.addEventListener('click', () => {
+    const current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+    const next = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) { /* localStorage unavailable */ }
+  });
+})();
+
+// Image modal — only on pages that include the modal markup
 (function() {
   const fallback = 'assets/fallback_poster.svg';
   const modal = document.getElementById('imgModal');
@@ -6,9 +19,7 @@
   const modalCaption = document.getElementById('modalCaption');
   const closeBtn = modal.querySelector('.modal-close');
 
-  // Ensure responsive sizing for very large images
   function applyImageConstraints() {
-    // Allow some padding inside modal (handled by CSS); limit height to viewport minus margin
     modalImg.style.maxHeight = '82vh';
     modalImg.style.width = 'auto';
     modalImg.style.objectFit = 'contain';
@@ -29,7 +40,6 @@
       applyImageConstraints();
       closeBtn.focus();
     });
-    // Keyboard accessibility for button already inherent; ensure Enter also works for non-button use-case
   });
 
   function closeModal() {
